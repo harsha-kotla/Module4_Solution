@@ -1,6 +1,10 @@
-var speakWord = "Hello";
+(function (window) {
+var sayGoodBye = {}
+sayGoodBye.speakWord = "Good bye";
 
-
-function speak(name) {
-  console.log(speakWord + " " + name);
+sayGoodBye.sayit = function (name) {
+  console.log(sayGoodBye.speakWord + " " + name);
 }
+ window.sayGoodBye = sayGoodBye
+})(window)
+
