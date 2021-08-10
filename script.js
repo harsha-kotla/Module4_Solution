@@ -2,8 +2,8 @@ var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula"
 for (i=0; i<names.length; i++) {
   name = names[i]
   if (name[0] == "J") {
-    console.log("Good Bye " + name)
+    sayGoodBye.sayit(name)
   } else {
-    console.log("Hello " + name)
+    sayHello.sayit(name)
   }
 }
